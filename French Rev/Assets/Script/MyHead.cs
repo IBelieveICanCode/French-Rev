@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MyHead : MonoBehaviour
 {
-
+    
     //public Transform club;
 
 
@@ -30,8 +30,10 @@ public class MyHead : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
       {
         if (col.tag == "Portal1")
+            
             col.GetComponentInParent<Portals>().TranslateToPortal2();
         if (col.tag == "Portal2")
+            
             col.GetComponentInParent<Portals>().TranslateToPortal1();
         if (col.tag == "Bomb")
             OnBombEnter(col.GetComponent<Bomb>().explosionForce);

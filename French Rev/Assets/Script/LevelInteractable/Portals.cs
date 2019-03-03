@@ -35,12 +35,14 @@ public class Portals : MonoBehaviour
 
     public void TranslateToPortal2()
     {
+        MenuAudioController.Instance.PlaySound("portal", false);
         GameController.Instance.myHead.setNewPosition(portal2.position);
         RemoveColliders();
     }
 
     public void TranslateToPortal1()
     {
+        MenuAudioController.Instance.PlaySound("portal", false);
         GameController.Instance.myHead.setNewPosition(portal1.position);
         RemoveColliders();
     }

@@ -12,7 +12,7 @@ public class HUD : MonoBehaviour
     static private HUD _instance;
 
     private GameState state;
-    
+
     [SerializeField]
     private GameObject MenuWindow;
 
@@ -79,7 +79,7 @@ public class HUD : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
     public void ShowWindow(GameObject window)
@@ -94,7 +94,9 @@ public class HUD : MonoBehaviour
     }
     public void Died()
     {
-        
+        MenuAudioController.Instance.StopMusic();
+        MenuAudioController.Instance.PlaySound("win", false);
+
         ShowWindow(LooseWindow);
         finalScoresCount.text = "Your final score is:" + GameController.Instance.myHead.CalculateScore();
     }
@@ -110,7 +112,11 @@ public class HUD : MonoBehaviour
 
     public void ShowHighScore()
     {
+        
         highScoreCount.text = "Best Score:" + PlayerPrefs.GetInt("PlayerBestScore").ToString();
     }
+
+
+        
 }
 

@@ -13,6 +13,7 @@ public class Spikes : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MyHead>() != null)
         {
+            MenuAudioController.Instance.PlaySound("spiketrap",false);
             collision.gameObject.GetComponent<Rigidbody2D>().simulated = false;
 
             collision.transform.SetParent(transform);
@@ -20,6 +21,10 @@ public class Spikes : MonoBehaviour
             Instantiate(GameController.Instance.myHead.blood, new Vector2(collision.transform.position.x, collision.transform.position.y) , Quaternion.identity);
 
             GameController.Instance.GameOver.Invoke();
+
+            MenuAudioController.Instance.PlaySound("wilhelm",false);
+
+
         }
     }
 }

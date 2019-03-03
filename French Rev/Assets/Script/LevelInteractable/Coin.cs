@@ -27,6 +27,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MyHead>() != null)
         {
+            MenuAudioController.Instance.PlaySound("Coin",false);
             PlayerController.Instance.changeDashAmount(+1);
             Destroy(gameObject);
         }

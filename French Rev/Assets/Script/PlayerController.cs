@@ -83,12 +83,14 @@ public class PlayerController : MonoBehaviour
                 if (chargeTimer < 1)
                     chargeTimer += Time.deltaTime;
                 GameController.Instance.myDude.SetAnimation("Prepare", true);
+                
 
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 GameController.Instance.myDude.SetAnimation("Prepare", false);
                 GameController.Instance.myDude.SetAnimation("Hit", true);
+                MenuAudioController.Instance.PlaySound("hit", false);
                 GameController.Instance.myHead.GetImpulse(Vector2.one, hitForce * chargeTimer);
                 chargeTimer = 0;
                 headFly = !headFly;
@@ -103,6 +105,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && Time.time>nextDashTime && dashAvailable > 0)// availableDashTimer <= 0)
             {
+                MenuAudioController.Instance.PlaySound("dash",false);
                 GameController.Instance.myHead.GetImpulse(new Vector2(0.3f, -1).normalized, dashForce);
 
                 //availableDashTimer = dashTimer;

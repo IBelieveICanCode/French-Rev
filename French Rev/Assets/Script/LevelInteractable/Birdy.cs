@@ -63,6 +63,7 @@ public class Birdy : MonoBehaviour
 
     IEnumerator HeadCarrying(MyHead head)
     {
+        MenuAudioController.Instance.PlaySound("chicken",false);
         head.TakeHead(0);
         head.transform.SetParent(transform);
         GetComponent<CircleCollider2D>().enabled = false;

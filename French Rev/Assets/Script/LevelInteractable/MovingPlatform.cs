@@ -29,4 +29,12 @@ public class MovingPlatform : MonoBehaviour
         else if (direction == MovingDirection.X)
             transform.position = new Vector3 ( startPosition.x + amplitude * Mathf.Cos(w * Time.time), transform.position.y, transform.position.z);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<MyHead>() != null)
+        {
+            MenuAudioController.Instance.PlaySound("ouch floor", true);
+        }
+    }
 }

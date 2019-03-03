@@ -10,6 +10,7 @@ TagManager:
   - Bomb
   - Birdy
   - Spring
+  - music
   layers:
   - Default
   - TransparentFX

@@ -26,6 +26,7 @@ public class SpringPlatform : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MyHead>() != null)
         {
+            MenuAudioController.Instance.PlaySound("poof",false);
             springAnimation.SetTrigger("SpringUp");
         }
     }

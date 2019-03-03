@@ -19,6 +19,8 @@ public class Bomb : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MyHead>() != null)
         {
+            MenuAudioController.Instance.PlaySound ("bomb", false);
+            MenuAudioController.Instance.PlaySound("wilhelm", false);
             //rb = collision.gameObject.GetComponent<Rigidbody2D>();
             //GameController.Instance.myHead.GetImpulse(direction, PlayerController.Instance.dashForce - 1);
             Instantiate(particleBomb, transform.position, Quaternion.identity);

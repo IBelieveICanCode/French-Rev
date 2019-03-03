@@ -61,44 +61,48 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\AnotherCamera.cs" />
+    <Compile Include="Assets\Script\Audio.cs" />
     <Compile Include="Assets\Script\CameraControl.cs" />
     <Compile Include="Assets\Script\Club.cs" />
     <Compile Include="Assets\Script\CountScores.cs" />
     <Compile Include="Assets\Script\Dude.cs" />
-    <Compile Include="Assets\Script\Floor.cs" />
     <Compile Include="Assets\Script\Follower.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\HUD.cs" />
     <Compile Include="Assets\Script\LevelInteractable\Birdy.cs" />
     <Compile Include="Assets\Script\LevelInteractable\Bomb.cs" />
     <Compile Include="Assets\Script\LevelInteractable\Coin.cs" />
+    <Compile Include="Assets\Script\LevelInteractable\Floor.cs" />
     <Compile Include="Assets\Script\LevelInteractable\MovingPlatform.cs" />
     <Compile Include="Assets\Script\LevelInteractable\Portals.cs" />
     <Compile Include="Assets\Script\LevelInteractable\Spikes.cs" />
     <Compile Include="Assets\Script\LevelInteractable\SpringPlatform.cs" />
+    <Compile Include="Assets\Script\MainMenu.cs" />
+    <Compile Include="Assets\Script\MenuAudioController.cs" />
     <Compile Include="Assets\Script\MyHead.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\RandomGenerator.cs" />
+    <Compile Include="Assets\Script\Settings.cs" />
     <Reference Include="Cinemachine">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -302,19 +306,19 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Program Files(x86)/Unity/French Rev/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Sergey/Desktop/Repository for my games/French-Rev/French Rev/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
